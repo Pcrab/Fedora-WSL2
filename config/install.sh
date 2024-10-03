@@ -10,6 +10,8 @@ wget https://starship.rs/install.sh -O starship-install.sh
 chmod +x ./starship-install.sh && ./starship-install.sh --yes -b $HOME/.local/bin
 rm starship-install.sh
 
+starship preset nerd-font-symbols -o ~/.config/starship.toml
+
 # Install fisher and related plugins
 curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 
