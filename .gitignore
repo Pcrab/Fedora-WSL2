@@ -1,0 +1,10 @@
+/*
+!.gitignore
+!bash_profile
+!config/
+!build.sh
+!clean.sh
+!Dockerfile
+!wsl.conf
+
+!LICENSE
