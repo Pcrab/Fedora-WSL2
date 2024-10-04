@@ -13,7 +13,7 @@ RUN sed -e 's|^metalink=|#metalink=|g' \
          /etc/yum.repos.d/*.repo
 
 RUN dnf update -y
-RUN dnf install -y bsdtar basesystem dnf-plugins-core iputils sudo wget which zip ripgrep fd-find fish lsd emacs-nw git git-core gcc ncurses
+RUN dnf install -y bsdtar basesystem dnf-plugins-core iputils sudo wget which zip ripgrep fd-find fish lsd emacs-nw git git-core gcc ncurses rpmdevtools rpmlint
 RUN dnf copr enable wslutilities/wslu -y
 RUN dnf install -y wslu
 
